@@ -4,9 +4,93 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Portofolio Website</title>
+    <link rel="stylesheet" href="css/index.css">
+
 </head>
 <body>
+    <header>
+        <img src="img/revou-logo.png" alt="revou-img" class="logo">
+        <div class="nav-bar">
+            <div class="nav-item"><a href="#">Home</a></div>
+            <div class="nav-item"><a href="profile.html">Our Profile</a></div>
+            <div class="nav-item"><a href="#">Portofolio</a></div>
+            <div class="nav-item"><a href="#Message">Message Us</a></div>
+        </div>
+    </header>
+
+    <div id="hero-sect" class="hero">
+        <h2>Hi <span id="nama"></span>, Welcome to Website!</h2>
+        <h4>Ini adalah website latihan pertama aing lurr</h4>
+        <img src="img/revou-hero.png" alt="hero-img" width="1024" height="500">
+    </div>
+    <br>
+    <hr>
+    <div id="headquarters-sect">
+        <h1>Headquarters</h1>
+        <div class="wrapper">
+            <div class="headquarters-img-container">
+                <img class="headquarters-img" src="img/jakarta.jpg" alt="Jakarta" >
+                <p>Jakarta</p>
+            </div>
+            <div class="headquarters-img-container">
+                 <img class="headquarters-img" src="img/bandung.jpg" alt="Bandung" >
+                <p>Bandung</p>
+            </div>
+            <div class="headquarters-img-container">
+                 <img class="headquarters-img" src="img/surabaya.jpg" alt="Surabaya" >
+                <p>Surabaya</p>
+            </div>
+       </div>
+        </div>
+    </div>
+    <hr>
+    <div id="Message" class="message-us">
+        <h1>Message Us</h1>
+        <div class="message-us-form">
+            <form name="message-form" onsubmit="return validateForm()">
+                <table>
+                    <tr>
+                        <td>Nama</td>
+                        <td>:</td>
+                        <td><input type="text" name="name" placeholder="Nama"></td>
+                    </tr>
+                    <tr>
+                        <td>Tanggal Lahir</td>
+                        <td>:</td>
+                        <td><input type="date" name="dob"></td>
+                    </tr>
+                    <tr>
+                        <td>Jenis Kelamin</td>
+                        <td>:</td>
+                        <td>
+                            <input type="radio" name="gender" value="male">Laki-laki
+                            <input type="radio" name="gender" value="female">Perempuan
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Pesan</td>
+                        <td>:</td>
+                        <td><textarea type="text" name="message" placeholder="Pesan"></textarea></td>
+                    </tr>
+                </table>
+                <input class="btn-submit" type="submit" value="Submit">
+            </form>
+    
+            <div class="table-2">
+                <p class="formtext">Current Time: <span id="current-time"></span></p>
+                <p class="formtext">Nama: <span id=sender-name></span></p>
+                <p class="formtext">Tanggal Lahir: <span id=sender-dob></span></p>
+                <p class="formtext">Jenis Kelamin: <span id=sender-gender></span></p>
+                <p class="formtext">Pesan: <span id=sender-message></span></p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p> Created by BramastaPriadinata &#169; </p>
+    </footer>
+    <script src="js/script.js"></script>
     
 </body>
 </html>

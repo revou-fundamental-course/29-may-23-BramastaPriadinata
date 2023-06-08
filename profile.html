@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portofolio Website</title>
+    <link rel="stylesheet" href="css/profile.css" />
+  </head>
+  <body>
+    <header>
+      <img src="img/revou-logo.png" alt="revou-img" class="logo" />
+      <div class="nav-bar">
+        <div class="nav-item"><a href="index.html">Home</a></div>
+        <div class="nav-item"><a href="profile.html">Our Profile</a></div>
+        <div class="nav-item"><a href="#">Portofolio</a></div>
+        <div class="nav-item"><a href="#Message">Message Us</a></div>
+      </div>
+    </header>
+
+    <div class="profile">
+      <img src="img/revou-hero.png" alt="profile-img" />
+      <div class="text-profile"></div>
+      <p>
+        RevoU adalah sekolah online (EdTech) yang membekali para murid dengan
+        keterampilan digital yang lagi in-demand di zaman industri teknologi 4.0
+        saat ini. Sampai sekarang, RevoU udah berhasil bantuin 10.000+ alumni
+        utk mendapatkan karir impian, maupun mengembangkan bisnis mereka di
+        bidang digital!
+      </p>
+    </div>
+    <br />
+    <hr />
+    <div class="vission">
+      <h1>Vissions</h1>
+      <div class="wrapper">
+        <div class="vision-text">
+          <p>
+            Memberdayakan Profesional <br />
+            Indonesia
+          </p>
+        </div>
+        <div class="vision-text">
+          <p>Mendorong Transformasi Digital</p>
+        </div>
+        <div class="vision-text">
+          <p>
+            Membangun Komunitas <br />
+            Pembelajaran yang Solid
+          </p>
+        </div>
+      </div>
+    </div>
+    <br />
+    <hr />
+    <div class="mission">
+      <h1>Mission</h1>
+      <div class="wrapper">
+        <div class="text-mission"></div>
+        <p>
+          Misi kami di RevoU adalah mengubah kehidupan melalui pendidikan yang
+          mudah diakses dan praktis. Kami berkomitmen untuk melengkapi individu
+          dengan keterampilan dan pengetahuan yang mereka butuhkan untuk
+          berkembang di era digital. Dengan menyediakan kursus berkualitas
+          tinggi dan program mentorship, kami memberdayakan para mahasiswa untuk
+          mengoptimalkan potensi mereka dan mencapai kesuksesan profesional.
+          Kami berusaha untuk mengatasi kesenjangan keterampilan, membentuk
+          komunitas pembelajaran yang mendukung, dan mendorong transformasi
+          digital di berbagai industri. Misi kami adalah menciptakan peluang
+          bagi individu untuk meningkatkan keterampilan, memajukan karier, dan
+          berkontribusi pada pertumbuhan dan inovasi dalam tenaga kerja
+          Indonesia.
+        </p>
+      </div>
+    </div>
+    <br />
+    <hr />
+    <div id="Message" class="message-us">
+      <h1>Message Us</h1>
+      <div class="message-us-form">
+        <form name="message-form" onsubmit="return validateForm()">
+          <table>
+            <tr>
+              <td>Nama</td>
+              <td>:</td>
+              <td><input type="text" name="name" placeholder="Nama" /></td>
+            </tr>
+            <tr>
+              <td>Tanggal Lahir</td>
+              <td>:</td>
+              <td><input type="date" name="dob" /></td>
+            </tr>
+            <tr>
+              <td>Jenis Kelamin</td>
+              <td>:</td>
+              <td>
+                <input type="radio" name="gender" value="male" />Laki-laki
+                <input type="radio" name="gender" value="female" />Perempuan
+              </td>
+            </tr>
+            <tr>
+              <td>Pesan</td>
+              <td>:</td>
+              <td>
+                <textarea
+                  type="text"
+                  name="message"
+                  placeholder="Pesan"
+                ></textarea>
+              </td>
+            </tr>
+          </table>
+          <input class="btn-submit" type="submit" value="Submit" />
+        </form>
+
+        <div class="table-2">
+          <p class="formtext">Current Time: <span id="current-time"></span></p>
+          <p class="formtext">Nama: <span id="sender-name"></span></p>
+          <p class="formtext">Tanggal Lahir: <span id="sender-dob"></span></p>
+          <p class="formtext">
+            Jenis Kelamin: <span id="sender-gender"></span>
+          </p>
+          <p class="formtext">Pesan: <span id="sender-message"></span></p>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <p>Created by BramastaPriadinata &#169;</p>
+    </footer>
+
+    <script src="js/profile-script.js"></script>
+  </body>
+</html>
